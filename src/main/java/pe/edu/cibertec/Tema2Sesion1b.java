@@ -21,4 +21,9 @@ public class Tema2Sesion1b {
 //        }
     }
 
+    public static boolean pciPass(String password){
+        String regex = "^(?=.*[A-Z])[a-zA-Z0-9]{6,10}$";
+        return password.matches(regex);
+    }
+
 }
